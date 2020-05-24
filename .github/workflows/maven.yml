@@ -5,9 +5,9 @@ name: Java CI with Maven
 
 on:
   push:
-    branches: [ master, afishaManager ]
+    branches: [ master, afishaManager, layers]
   pull_request:
-    branches: [ master, afishaManager ]
+    branches: [ master, afishaManager, layers]
 
 jobs:
   build:
