@@ -8,17 +8,17 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class AfishaManagerDefaultTest {
     AfishaManager manager;
-    Film film1 = new Film (1, "Гарри Поттер и филосовский камень", "фэнтези", "http:\\image.jpg");
-    Film film2 = new Film (2, "Гарри Поттер и тайная комната", "фэнтези", "http:\\image.jpg");
-    Film film3 = new Film (3, "Гарри Поттер и узник Азкабана", "фэнтези", "http:\\image.jpg");
-    Film film4 = new Film (4, "Гарри Поттер и кубок огня", "фэнтези", "http:\\image.jpg");
-    Film film5 = new Film (5, "Гарри Поттер и принц-полукровка", "фэнтези", "http:\\image.jpg");
-    Film film6 = new Film (6, "Гарри Поттер и дары смерти 1", "фэнтези", "http:\\image.jpg");
-    Film film7 = new Film (7, "Гарри Поттер и дары сметри 2", "фэнтези", "http:\\image.jpg");
-    Film film8 = new Film (8, "Фантастические твари и где они обитают", "фэнтези", "http:\\image.jpg");
-    Film film9 = new Film (9, "Фантастические твари преступление Гри-де-Вальда", "фэнтези", "http:\\image.jpg");
-    Film film10 = new Film (10, "Фантастические твари и где они обитают 3", "фэнтези", "http:\\image.jpg");
-    Film film11 = new Film (11, "Фантастические твари и где они обитают 4", "фэнтези", "http:\\image.jpg");
+    private Film film1 = new Film (1, "Гарри Поттер и филосовский камень", "фэнтези", "http:\\image.jpg");
+    private Film film2 = new Film (2, "Гарри Поттер и тайная комната", "фэнтези", "http:\\image.jpg");
+    private Film film3 = new Film (3, "Гарри Поттер и узник Азкабана", "фэнтези", "http:\\image.jpg");
+    private Film film4 = new Film (4, "Гарри Поттер и кубок огня", "фэнтези", "http:\\image.jpg");
+    private Film film5 = new Film (5, "Гарри Поттер и принц-полукровка", "фэнтези", "http:\\image.jpg");
+    private Film film6 = new Film (6, "Гарри Поттер и дары смерти 1", "фэнтези", "http:\\image.jpg");
+    private Film film7 = new Film (7, "Гарри Поттер и дары сметри 2", "фэнтези", "http:\\image.jpg");
+    private Film film8 = new Film (8, "Фантастические твари и где они обитают", "фэнтези", "http:\\image.jpg");
+    private Film film9 = new Film (9, "Фантастические твари преступление Гри-де-Вальда", "фэнтези", "http:\\image.jpg");
+    private Film film10 = new Film (10, "Фантастические твари и где они обитают 3", "фэнтези", "http:\\image.jpg");
+    private Film film11 = new Film (11, "Фантастические твари и где они обитают 4", "фэнтези", "http:\\image.jpg");
 
     @BeforeEach
     void setUp(){
