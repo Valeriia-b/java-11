@@ -9,7 +9,9 @@ import ru.netology.repository.AfishaRepository;
 public class AfishaManager {
 
     private AfishaRepository repository;
-    private int itemsToReturn = 10;
+    private int defaultItemsToReturn = 10;
+    private int itemsToReturn;
+
 
     public AfishaManager(AfishaRepository repository) {
         this.repository = repository;
@@ -26,10 +28,18 @@ public class AfishaManager {
 
         public Film[] getFilms () {
             Film[] filmsFromRepo = repository.findAll();
-            int arrayLength = itemsToReturn;
-            if (filmsFromRepo.length < arrayLength) {
-                arrayLength = filmsFromRepo.length;
+            int arrayLength = filmsFromRepo.length;
+
+            if (itemsToReturn <= 0) {
+                if (defaultItemsToReturn < filmsFromRepo.length) {
+                    arrayLength = defaultItemsToReturn;
+                }
+            } else {
+                if (itemsToReturn < filmsFromRepo.length) {
+                    arrayLength = itemsToReturn;
+                }
             }
+
             Film[] result = new Film[arrayLength];
             for (int i = 0; i < arrayLength; i++) {
                 int index = filmsFromRepo.length - i - 1;
